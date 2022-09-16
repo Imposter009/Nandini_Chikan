@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="" UTF=8">
+    <title> Kurti Section </title>
+    <link rel="stylesheet" href="project_style.css">
+
+    <!-- font style -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&family=Poppins:wght@200&display=swap"
+        rel="stylesheet">
+</head>
+
+
+<body>
+    <div clas="container">
+        <div class="navbar background">
+
+            <!-- for shop logo -->
+            <div class="logo">
+                <a href="index.html"><img src="New folder\logo\unknown.png" width=" 250px"></a>
+            </div>
+
+
+            <nav>
+                <ul>
+                    <!-- for the options available for the user -->
+                    <li> <a class="option" href="index.html">Home</a></li>
+                    <li> <a class="option" href="kurti_section.html">Products</a> </li>
+                    <li> <a class="option" href="account.html">Account</a></li>
+                    <li> <a class="option" href="https://forms.gle/8xMiSnagSQdELeDQ9" target="_blankS">Feedback</a></li>
+                    <!-- cart logo -->
+                    <a><img class="option" src="New folder\logo\cart.png" width="55px" height="40px"></a>
+                </ul>
+            </nav>
+        </div>
+
+    </div>
+
+    <div class="account-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span onclick="login()">Login</span>
+                            <span onclick="register()">Register</span>
+                            <hr id="indicator">
+                        </div>
+                        <form id="loginform">
+                            <input type="text" placeholder="UserName">
+                            <input type="password" placeholder="Password">
+                            <button type="submit" class="btn">Login</button>
+                            <a href="">Forgot Password</a>
+                        </form>
+                        <form id="regform">
+                            <input type="text" placeholder="UserName">
+                            <input type="email" placeholder="Email">
+                            <input type="password" placeholder="Password">
+                            <button type="submit" class="btn">Register</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="credit">
+        <div>
+            <a href="https://www.facebook.com/profile.php?id=100056277964125" target="_blank"><img
+                    src="New folder\logo\facebook.png"></a>
+        </div>
+        <div>
+            <a href="https://www.instagram.com/invites/contact/?i=brc7ofldfbzz&utm_content=jzhhynp" target="_blank"><img
+                    src="New folder\logo\insta.png"></a>
+        </div>
+        <div>
+            <a href="https://chat.whatsapp.com/GfxTThpKU9S5RduWSHSGI7" target="_blank"><img
+                    src="New folder\logo\whatsapp.png"></a>
+        </div>
+    </div>
+
+
+
+    <script>
+        var logform = document.getElementById("loginform")
+        var regform = document.getElementById("regform")
+        var indicator = document.getElementById("indicator")
+        function register() {
+            regform.style.transform = "translateX(0px)";
+            logform.style.transform = "translateX(0px)";
+            indicator.style.transform = "translateX(100px)";
+        }
+        function login() {
+            regform.style.transform = "translateX(300px)";
+            logform.style.transform = "translateX(300px)";
+            indicator.style.transform = "translateX(0px)";
+        }
+    </script>
+</body>
+
+</html>
